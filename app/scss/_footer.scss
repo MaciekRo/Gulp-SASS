@@ -1,0 +1,20 @@
+#main-footer {
+    text-align: center;
+    color: #FFF;
+    background-color: $gray-color;
+    padding: 20px 40px;
+    
+    .floated {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        
+        .fa {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            color: $gray-color;
+            background-color: $yellow-color;
+        }
+    }
+}

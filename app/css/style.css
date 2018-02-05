@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: #001d8a;
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0;
+    z-index: 10;
+    height: 100vh;
+    position: relative;
+}
+
+header #main-logo {
+    float: left;
+    margin-left: 30px;
+}
+
+header #main-logo h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+header #main-logo .fa {
+    color: #ecd407;
+    line-height: 43px;
+    font-size: 2em;
+    float: left;
+    margin-right: 10px;
+}
+
+header #header-contact {
+    float: right;
+    width: 300px;
+}
+
+header #header-contact .fa {
+    font-size: 2em;
+    float: left;
+    margin-right: 10px;
+    line-height: 43px;
+}
+
+header #header-contact span {
+    display: block;
+}
+
+header #formularz {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30%;
+}
+
+header #formularz h2 {
+    color: #FFF;
+}
+
+header #formularz h2 span {
+    color: #ecd407;
+}
+
+header #formularz form {
+    padding: 20px 10px;
+    background-color: #001d8a;
+}
+
+header #formularz form h3 {
+    color: #FFF;
+}
+
+header #formularz form input:not([type="submit"]),
+      header #formularz form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+header #formularz form input[type="submit"] {
+    widht: 100px;
+    height: 40px;
+    background-color: #ecd407;
+    border: 0;
+}
+
+#main-footer {
+    text-align: center;
+    color: #FFF;
+    background-color: #292929;
+    padding: 20px 40px;
+}
+
+#main-footer .floated {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+#main-footer .floated .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #292929;
+    background-color: #ecd407;
+}
+
+@media all and (max-width: 480px) {
+    #main-footer .floated {
+        width: 100%;
+        float: none;
+    }
+}

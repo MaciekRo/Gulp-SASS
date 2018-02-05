@@ -1,0 +1,82 @@
+header{
+    color: #fff;
+    padding: 20px 0;
+    z-index: 10;
+    height: 100vh;
+    position: relative;
+
+    
+    #main-logo{
+        float: left;
+        margin-left: 30px;
+        
+        h1{
+            display: inline-block;
+            margin: 0;
+        }
+        
+        .fa{
+            color: $yellow-color;
+            line-height: 43px;
+            @include fa-header;
+        }
+    }
+    
+    #header-contact{
+        float: right;
+        width: 300px;
+        
+        .fa{
+            @include fa-header;
+            line-height: 43px;
+        }
+        span{
+            display: block;
+        }
+    }
+    
+    #formularz {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30%;
+        
+        h2 {
+            color: #FFF;
+            
+            span {
+                color: $yellow-color;
+            }
+        }
+        
+        form {
+            padding: 20px 10px;
+            background-color: $main-color;
+            
+            h3 {
+                color: #FFF;
+            }
+            
+            input:not([type="submit"]),
+            textarea {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 10px;
+                height: 30px;
+            }
+            
+            input[type="submit"] {
+                widht: 100px;
+                height: 40px;
+                background-color: $yellow-color;
+                border: 0;
+                
+//                "&" czytamy jako "this" lub "element rodzic" (w ktorym sie znajduje)
+                &:hover {
+                    
+                }
+            }
+        }
+    }
+}
